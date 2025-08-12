@@ -9,3 +9,15 @@ services:
       - ./mongo:/data/db
     ports:
       - 27017:27017
+    # Add remove option for volumes
+    volumes:
+      - type: volume
+        source: mongodb_data
+        target: /data/db
+        volume:
+          nocopy: true
+
+volumes:
+  mongodb_data:
+    name: mongodb_data
+    driver: local
