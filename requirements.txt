@@ -10,7 +10,7 @@ transformers >= 4.16.2
 torch >= 1.13.0
 pyonmttok >= 1.29.0
 natasha >= 1.4.0
-pillow == 10.3.0
+pillow == 11.3.0
 
 # Clustering
 scipy >= 1.7.1
